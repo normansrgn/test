@@ -3,32 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Business Website</title>
     <link rel="stylesheet" href="./css/index.css" />
-    <!-- <link
-      href=" https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css "
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-    /> -->
+    />
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
-        <nav class="header__nav">
-          <div class="header__logo">
-            <img src="./img/logo.png" alt="" />
-          </div>
-          <ul class="header__nav-list">
+        <nav class="header__nav" aria-label="Main navigation">
+          <a href="#" class="header__logo" aria-label="Homepage">
+            <img
+              src="./img/logo.png"
+              alt="Company Logo"
+              width="42"
+              height="42"
+            />
+          </a>
+          <button
+            class="header__toggle"
+            aria-controls="nav-list"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="header__toggle-icon"></span>
+          </button>
+          <ul class="header__nav-list" id="nav-list">
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Home</a>
+              <a href="#" class="header__nav-link">Lorem ipsum</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">About</a>
+              <a href="#" class="header__nav-link">Dolor sit amet</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Services</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Contact</a>
+              <a href="#" class="header__nav-link">Donec sodales</a>
             </li>
           </ul>
         </nav>
@@ -36,8 +48,169 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section class="promo" aria-labelledby="promo-title">
+        <div class="container promo__container">
+          <div class="promo__text">
+            <h1 class="promo__title" id="promo-title">
+              <span class="promo__title-medium">Lorem ipsum dolor sit</span>
+              <span class="promo__title-regular">amet Aenean commodo</span>
+            </h1>
+            <p class="promo__disc">
+              <span class="promo__disc-regular"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                commodo</span
+              >
+              <span class="promo_disc-bold">ligula eget dolor</span>
+            </p>
+            <div class="promo__btn_class">
+              <button class="promo__btn">Aenean commodo</button>
+              <span class="promo__btn-disc"
+                >Оставьте заявку на бесплатную консультацию</span
+              >
+              <svg
+                class=""
+                width="261"
+                height="127"
+                viewBox="0 0 261 127"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <g opacity="0.7" filter="url(#filter0_d_9_1594)">
+                  <path
+                    d="M247.5 19C242.253 19 238 14.7467 238 9.5C238 4.2533 242.253 1.2892e-06 247.5 8.30516e-07C252.747 3.71835e-07 257 4.25329 257 9.5C257 14.7467 252.747 19 247.5 19ZM213.5 19C208.253 19 204 14.7467 204 9.5C204 4.2533 208.253 4.26157e-06 213.5 3.80289e-06C218.747 3.34421e-06 223 4.2533 223 9.5C223 14.7467 218.747 19 213.5 19ZM179.5 19C174.253 19 170 14.7467 170 9.50001C170 4.2533 174.253 7.23395e-06 179.5 6.77527e-06C184.747 6.31658e-06 189 4.2533 189 9.50001C189 14.7467 184.747 19 179.5 19ZM145.5 19C140.253 19 136 14.7467 136 9.50001C136 4.25331 140.253 1.02063e-05 145.5 9.74764e-06C150.747 9.28896e-06 155 4.2533 155 9.50001C155 14.7467 150.747 19 145.5 19ZM115.5 19C110.253 19 106 14.7467 106 9.50001C106 4.25331 110.253 1.2829e-05 115.5 1.23703e-05C120.747 1.19116e-05 125 4.25331 125 9.50001C125 14.7467 120.747 19 115.5 19ZM81.5 19C76.2533 19 72 14.7467 72 9.50002C72 4.25331 76.2533 1.58014e-05 81.5 1.53427e-05C86.7467 1.4884e-05 91 4.25331 91 9.50001C91 14.7467 86.7467 19 81.5 19ZM47.5 19C42.2533 19 38 14.7467 38 9.50002C38 4.25331 42.2533 1.87738e-05 47.5 1.83151e-05C52.7467 1.78564e-05 57 4.25331 57 9.50002C57 14.7467 52.7467 19 47.5 19ZM13.5 19C8.25329 19 3.99999 14.7467 3.99999 9.50002C3.99999 4.25332 8.25328 2.17461e-05 13.5 2.12874e-05C18.7467 2.08288e-05 23 4.25332 23 9.50002C23 14.7467 18.7467 19 13.5 19ZM247.5 53C242.253 53 238 48.7467 238 43.5C238 38.2533 242.253 34 247.5 34C252.747 34 257 38.2533 257 43.5C257 48.7467 252.747 53 247.5 53ZM213.5 53C208.253 53 204 48.7467 204 43.5C204 38.2533 208.253 34 213.5 34C218.747 34 223 38.2533 223 43.5C223 48.7467 218.747 53 213.5 53ZM179.5 53C174.253 53 170 48.7467 170 43.5C170 38.2533 174.253 34 179.5 34C184.747 34 189 38.2533 189 43.5C189 48.7467 184.747 53 179.5 53ZM145.5 53C140.253 53 136 48.7467 136 43.5C136 38.2533 140.253 34 145.5 34C150.747 34 155 38.2533 155 43.5C155 48.7467 150.747 53 145.5 53ZM115.5 53C110.253 53 106 48.7467 106 43.5C106 38.2533 110.253 34 115.5 34C120.747 34 125 38.2533 125 43.5C125 48.7467 120.747 53 115.5 53ZM81.5 53C76.2533 53 72 48.7467 72 43.5C72 38.2533 76.2533 34 81.5 34C86.7467 34 91 38.2533 91 43.5C91 48.7467 86.7467 53 81.5 53ZM47.5 53C42.2533 53 38 48.7467 38 43.5C38 38.2533 42.2533 34 47.5 34C52.7467 34 57 38.2533 57 43.5C57 48.7467 52.7467 53 47.5 53ZM13.5 53C8.25329 53 3.99999 48.7467 3.99999 43.5C3.99999 38.2533 8.25329 34 13.5 34C18.7467 34 23 38.2533 23 43.5C23 48.7467 18.7467 53 13.5 53ZM247.5 87C242.253 87 238 82.7467 238 77.5C238 72.2533 242.253 68 247.5 68C252.747 68 257 72.2533 257 77.5C257 82.7467 252.747 87 247.5 87ZM213.5 87C208.253 87 204 82.7467 204 77.5C204 72.2533 208.253 68 213.5 68C218.747 68 223 72.2533 223 77.5C223 82.7467 218.747 87 213.5 87ZM179.5 87C174.253 87 170 82.7467 170 77.5C170 72.2533 174.253 68 179.5 68C184.747 68 189 72.2533 189 77.5C189 82.7467 184.747 87 179.5 87ZM145.5 87C140.253 87 136 82.7467 136 77.5C136 72.2533 140.253 68 145.5 68C150.747 68 155 72.2533 155 77.5C155 82.7467 150.747 87 145.5 87ZM115.5 87C110.253 87 106 82.7467 106 77.5C106 72.2533 110.253 68 115.5 68C120.747 68 125 72.2533 125 77.5C125 82.7467 120.747 87 115.5 87ZM81.5 87C76.2533 87 72 82.7467 72 77.5C72 72.2533 76.2533 68 81.5 68C86.7467 68 91 72.2533 91 77.5C91 82.7467 86.7467 87 81.5 87ZM47.5 87C42.2533 87 38 82.7467 38 77.5C38 72.2533 42.2533 68 47.5 68C52.7467 68 57 72.2533 57 77.5C57 82.7467 52.7467 87 47.5 87ZM13.5 87C8.25329 87 4 82.7467 4 77.5C4 72.2533 8.25329 68 13.5 68C18.7467 68 23 72.2533 23 77.5C23 82.7467 18.7467 87 13.5 87ZM247.5 121C242.253 121 238 116.747 238 111.5C238 106.253 242.253 102 247.5 102C252.747 102 257 106.253 257 111.5C257 116.747 252.747 121 247.5 121ZM213.5 121C208.253 121 204 116.747 204 111.5C204 106.253 208.253 102 213.5 102C218.747 102 223 106.253 223 111.5C223 116.747 218.747 121 213.5 121ZM179.5 121C174.253 121 170 116.747 170 111.5C170 106.253 174.253 102 179.5 102C184.747 102 189 106.253 189 111.5C189 116.747 184.747 121 179.5 121ZM145.5 121C140.253 121 136 116.747 136 111.5C136 106.253 140.253 102 145.5 102C150.747 102 155 106.253 155 111.5C155 116.747 150.747 121 145.5 121ZM115.5 121C110.253 121 106 116.747 106 111.5C106 106.253 110.253 102 115.5 102C120.747 102 125 106.253 125 111.5C125 116.747 120.747 121 115.5 121ZM81.5 121C76.2533 121 72 116.747 72 111.5C72 106.253 76.2533 102 81.5 102C86.7467 102 91 106.253 91 111.5C91 116.747 86.7467 121 81.5 121ZM47.5 121C42.2533 121 38 116.747 38 111.5C38 106.253 42.2533 102 47.5 102C52.7467 102 57 106.253 57 111.5C57 116.747 52.7467 121 47.5 121ZM13.5 121C8.25329 121 4 116.747 4 111.5C4 106.253 8.25329 102 13.5 102C18.7467 102 23 106.253 23 111.5C23 116.747 18.7467 121 13.5 121Z"
+                    fill="url(#paint0_linear_9_1594)"
+                    shape-rendering="crispEdges"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_9_1594"
+                    x="0"
+                    y="0"
+                    width="261"
+                    height="129"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_9_1594"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_9_1594"
+                      result="shape"
+                    />
+                  </filter>
+                  <linearGradient
+                    id="paint0_linear_9_1594"
+                    x1="257"
+                    y1="121"
+                    x2="155.56"
+                    y2="-112.074"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="white" />
+                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="promo__image">
+            <img
+              src="./img/promo.png"
+              alt="Promotional graphic"
+              width="400"
+              height="400"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
 
-    <footer></footer>
+      <section class="info">
+        <div class="container info__container">
+          <h2 class="info__title">Lorem ipsum</h2>
+
+          <div class="info__cards">
+            <div class="info__cards-row">
+              <div class="info__card-purple">
+                <div class="info__card-title-block">
+                  <span class="info__card-number"> 01 </span>
+                  <span class="info__card-title"> Lorem ipsum </span>
+                </div>
+                <div class="info__card-disc">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor
+                </div>
+              </div>
+              <div class="info__card-white">
+                <div class="info__card-title-block">
+                  <span class="info__card-number-white"> 02 </span>
+                  <span class="info__card-title-white"> Lorem ipsum </span>
+                </div>
+                <div class="info__card-disc-white">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula
+                </div>
+              </div>
+            </div>
+            <div class="info__cards-row">
+              <div class="info__card-white">
+                <div class="info__card-title-block">
+                  <span class="info__card-number-white"> 03 </span>
+                  <span class="info__card-title-white"> Lorem ipsum </span>
+                </div>
+                <div class="info__card-disc-white">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula
+                </div>
+              </div>
+              <div class="info__card-purple">
+                <div class="info__card-title-block">
+                  <span class="info__card-number"> 04 </span>
+                  <span class="info__card-title"> Lorem ipsum </span>
+                </div>
+                <div class="info__card-disc">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const toggleButton = document.querySelector(".header__toggle");
+      const navList = document.querySelector(".header__nav-list");
+
+      toggleButton.addEventListener("click", () => {
+        const isExpanded =
+          toggleButton.getAttribute("aria-expanded") === "true";
+        toggleButton.setAttribute("aria-expanded", !isExpanded);
+        navList.classList.toggle("header__nav-list--open");
+      });
+    </script>
   </body>
 </html>
