@@ -370,6 +370,87 @@ button {
   grid-column: span 6;
 }
 
+/* Promocards */
+
+.promocards {
+  text-align: center;
+}
+
+.promocards__title {
+  margin-top: 50px;
+  font-size: 48px;
+  font-weight: normal;margin-bottom: 30px;
+}
+
+.poromocards__container {
+  display: flex;
+  gap: 37px;
+}
+
+.promocards__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 22px;
+  padding: 24px;
+  gap: 20px;
+}
+
+.purple-card {
+  background-color: #a752ea;
+}
+
+.blue-card {
+  background: rgb(120, 121, 241);
+}
+
+.pink-card {
+  background: rgb(239, 93, 168);
+}
+
+.promocards__card-title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.promocards__card-disc {
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  width: 275px;
+}
+
+ .swiper {
+            width: 100%;
+            padding: 20px 0;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #333;
+        }
+        .swiper-pagination-bullet-active {
+            background: #A752EA;
+        }
+        @media (max-width: 768px) {
+            .promocards__card {
+                margin: 5px;
+                padding: 15px;
+            }
+            .promocards__card-title {
+                font-size: 20px;
+            }
+            .promocards__card-disc {
+                font-size: 14px;
+            }
+        }
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
@@ -435,6 +516,8 @@ button {
     display: none;
   }
 }
+
+
 
 @media (max-width: 480px) {
   .header__logo img {
