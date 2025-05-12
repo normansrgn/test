@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+ul {
+  margin: 0 !important;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+     font-family: "Montserrat", sans-serif;
+  background-color: black;
+}
+
+.header {
+  background-color: white;
+  padding: 11px;
+  border-bottom-left-radius: 24px ;
+  border-bottom-right-radius: 24px ;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 58px;
+}
+
+.header__logo {
+    cursor: pointer;
+  & img {
+    width: 42px;
+  }
+}
+
+.header__nav-list {
+  list-style: none;
+  font-size: 21px;
+  font-weight: 200;
+  color: black;
+  display: flex;
+  gap: 30px;
+}
+
+.header__btn {
+  cursor: pointer;
+  background-color: black;
+  padding: 11px;
+  color: white;
+  font-size: 18px;
+  width: 200px;
+  border: 1px solid #ea7552;
+  border-radius: 31px;
+  background-color: #ea7552;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #d86340;
+  }
+}
